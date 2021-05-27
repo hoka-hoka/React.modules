@@ -1,0 +1,48 @@
+@import './fonts';
+
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: $mainFontSize;
+  font-family: $mainFont;
+}
+
+button {
+  cursor: pointer;
+  border: {
+    width: 0;
+  }
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+input[type='text'] {
+  border-width: 0;
+  outline: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
